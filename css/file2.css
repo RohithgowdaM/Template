@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Rubik", sans-serif ;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+    padding: 5%;
+}
+   
+h1{
+  text-align: center;
+  font-size: 4.8rem;
+  font-weight: 500;
+  color: #cf711f;
+  margin-bottom: 3rem;
+
+}
+.show{
+  margin-bottom: 4.8rem;
+}
+  /* Styling the area of the slides */
+  .slideshow {
+    overflow: hidden;
+    height: 400px;
+    width: 600px;
+    margin: 0 auto;
+  }
+   
+  /* Style each of the sides
+  with a fixed width and height */
+  .slide {
+    float:left;
+    height: 400px;
+    width: 600px;
+  }
+   
+  /* Add animation to the slides */
+  .slide-wrapper {
+     
+  /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(600px * 4);
+   
+  /* Specify the animation with the
+    duration and speed */
+    animation: slide 10s ease infinite;
+  }
+
+  .slide-image {
+    width: 600px;
+    height: 400px;
+  }
+   
+.img {
+    overflow: hidden;
+    height: fit-content;
+    width: fit-content;
+}
+  /* Define the animation
+  for the slideshow */
+  @keyframes slide {
+     
+  /* Calculate the margin-left for
+    each of the slides */
+    20% {
+      margin-left: 0px;
+    }
+   
+    40% {
+      margin-left: calc(-600px * 1);
+    }
+   
+    60% {
+      margin-left: calc(-600px * 2);
+    }
+   
+    80% {
+      margin-left: calc(-600px * 3);
+    }
+  }
+
+  .description
+  {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+  }
+
+  .selection-box
+  {
+    background-color: #cf711f;
+    color: #fff;
+    height: 360px;
+    width: 240px;
+    text-align: center;
+    padding: 4%;
+    border-radius: 11px;
+}
+
+  .describe {
+    padding: 4.8rem;
+    font-size: 1.8rem;
+  }
+
+.btn {
+  display: inline-block;
+  font-size: 2rem;
+  text-align: justify;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  transition: all 0.3s;
+  border: none;
+  height: 5.5rem;
+  cursor: pointer;
+  font-family: inherit;
+  width: 22rem;
+  margin-bottom: 1.6rem;
+}
+
+
+.btn--les:link,
+.btn--les:visited {
+    background-color: #fff;
+    color: #555;
+}
+
+.btn--les:hover,
+.btn--les:active {
+    background-color: #fdf2e9;
+    box-shadow: inset 0 0 0 3px #fff;
+
+}
+
+.imgage {
+  overflow: hidden;
+}
+
+.image img {
+  border-radius: 11px;
+  display: block;
+  width: auto;
+  transition: all 0.3s;
+}
+.image img:hover {
+  transform: scale(1.2);
+}
