@@ -13,7 +13,8 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #555;
-    padding: 5%;
+    padding: 0.2%;
+    background-color: aliceblue;
 }
    
 h1{
@@ -24,6 +25,23 @@ h1{
   margin-bottom: 3rem;
 
 }
+
+.logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.logo img
+{
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 3.2rem;
+}
+
+.rv_logo{
+  text-align: right;
+}
+
+
 .show{
   margin-bottom: 4.8rem;
 }
@@ -103,6 +121,7 @@ h1{
     text-align: center;
     padding: 4%;
     border-radius: 11px;
+    word-wrap: break-word;
 }
 
   .describe {
@@ -115,7 +134,7 @@ h1{
   font-size: 2rem;
   text-align: justify;
   text-decoration: none;
-  padding: 1.6rem 3.2rem;
+  padding: 1.6rem 3.2rem 1.6rem ;
   border-radius: 9px;
   transition: all 0.3s;
   border: none;
@@ -152,4 +171,108 @@ h1{
 }
 .image img:hover {
   transform: scale(1.2);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #5b54b7;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+ font-size:20px;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.active{
+background-color: gray;
+color: white;
+}
+li a:hover {
+  background-color: orange;
+  color: white;
+}
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+img{
+  height: 400px;
 }
