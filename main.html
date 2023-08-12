@@ -1,130 +1,268 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <title>Govt</title>
-    <link rel="stylesheet" href="css\file2.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <title>Govt</title>
+  <link rel="stylesheet" href="css\file2.css">
 </head>
+
 <body>
-    <div class="logo">
-        <div>
-            <img src="source/kar_main_logo.jpeg" alt="Education board logo">
-        </div>
-        <div class="rv_logo">
-            <img src="source\RV-logo.jpeg" alt="RV logo">
-        </div>
+  <div class="logo">
+    <div>
+      <img src="source/kar_main_logo.jpeg" alt="Education board logo">
     </div>
-        <ul>
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#">Java</a></li>
-          <li><a href="#">HTML</a></li>
-          <li><a href="#">CSS</a></li>
-        </ul>
-        <br>
-    <h1><b>Teacher Profile</b></h1>
-    
-<div class="slideshow-container">
+    <div class="rv_logo">
+      <img src="source\RV-logo.jpeg" alt="RV logo">
+    </div>
+  </div>
+  <ul id="myDIV">
+    <li><a class="btn active" href="#home">Home</a></li>
+    <li><a class="btn" href="#">Java</a></li>
+    <li><a class="btn" href="#">HTML</a></li>
+    <li><a class="btn" href="#">CSS</a></li>
+  </ul>
+  <br>
+  <h1><b>Teacher Profile</b></h1>
+
+  <div class="slideshow-container">
 
     <div class="mySlides fade">
-      <img src="/source/v1.jpeg" style="width:100%">
+      <img src="source/v1.jpeg" style="width:100%">
     </div>
-    
+
     <div class="mySlides fade">
-      <img src="/source/v2.jpeg" style="width:100%">
+      <img src="source\v2.jpeg" style="width:100%">
     </div>
-    
+
     <div class="mySlides fade">
-      <img src="/source/v3.jpeg" style="width:100%">
+      <img src="source/v3.jpeg" style="width:100%">
     </div>
-    
+
     <a class="prev" onclick="next(-1)">❮</a>
     <a class="next" onclick="next(1)">❯</a>
-    
-    </div>
-    <br>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="present(1)"></span> 
-      <span class="dot" onclick="present(2)"></span> 
-      <span class="dot" onclick="present(3)"></span> 
-    </div>
 
-    <section>
-        <div class="description">
-            <div class="selection-box">
-                <a href="#" class="btn btn--les ">general info</a>
-                <a href="#" class="btn btn--les ">Educational info</a>
-                <a href="#" class="btn btn--les ">Eligibity info</a>
-                <a href="#" class="btn btn--les ">Seminar/workshops</a>
-                <a href="#" class="btn btn--les ">Service info</a>
+  </div>
+  <br>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="present(1)"></span>
+    <span class="dot" onclick="present(2)"></span>
+    <span class="dot" onclick="present(3)"></span>
+  </div>
+
+  <section>
+    <!-- Top navigation -->
+    <div class="topnav">
+
+      <div id="mydiv">
+        <a href="#home" class="btn active" onclick="showContent('general')">General info</a>
+        <a href="#news" class="btn" onclick="showContent('educational')">Educational info</a>
+        <a href="#contact" class="btn" onclick="showContent('eligibilities')">Eligibilities</a>
+        <a href="#search" class="btn" onclick="showContent('workshops')">Workshops</a>
+        <a href="#about" class="btn" onclick="showContent('experience')">Experience</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="description">
+      <section id="content">
+
+
+        <div id="general" class="content">
+
+          <div class="describe">
+            <div class="info_box">
+              <div class="info">
+                <h2>Name </h2>
+                <h2 class="alignment">: </h2>
+                <h2>Dodanna</h2>
+              </div>
             </div>
-            <div class="describe">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel sem auctor, lobortis est sit amet,
-                    mollis turpis. Etiam blandit magna sapien, efficitur consectetur leo accumsan nec. Fusce ex ex,
-                    pretium quis nisl eget, condimentum egestas metus. Curabitur rhoncus eget dui ac consequat. Proin
-                    ligula ex, iaculis et egestas eu, ultrices ac lectus. Nullam vestibulum, ante eu tempus accumsan,
-                    eros metus viverra elit, non ullamcorper nisl odio sit amet orci. In vel risus tempus ligula
-                    fermentum accumsan. Sed laoreet ex eu enim interdum consequat. Nulla fringilla ac justo sed blandit.
-                    Aliquam et mauris eros. Aliquam eget nunc augue. Maecenas in dui nec urna posuere sollicitudin.
-                    Donec volutpat vitae est vel congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    condimentum ex nulla, a tincidunt dolor euismod ac.
-                    Quisque consectetur nibh sit amet felis laoreet auctor. Cras mattis dolor eget orci sagittis, in
-                    ullamcorper justo ultrices. In suscipit felis tellus, ac feugiat metus bibendum quis. Mauris sit
-                    amet tristique magna. Nulla facilisi. Morbi tristique diam nec metus varius, quis pellentesque massa
-                    iaculis. Aenean eu arcu est. Cras convallis augue enim, vitae facilisis mauris tincidunt non.
-                    Aliquam id tincidunt ligula. Quisque porttitor augue ut velit dignissim, ut placerat lectus mattis.
-                    Duis rutrum mattis diam a dignissim. Aliquam lacinia nisl nisl, id efficitur tellus finibus sit
-                    amet.
-                    Nullam finibus metus ultrices velit aliquet, a auctor nulla porta. Nam eu tortor in turpis laoreet
-                    varius non eu nisi. Donec nec leo suscipit, efficitur tortor vel, lobortis leo. Suspendisse
-                    elementum posuere metus in tincidunt. Vivamus velit enim, sagittis at faucibus vitae, finibus mollis
-                    orci. Aliquam rutrum vehicula mauris, vel gravida lectus tincidunt sit amet. Proin sit amet cursus
-                    augue. Curabitur nec consequat elit, eu blandit mauris. Maecenas nulla augue, accumsan finibus
-                    ligula id, venenatis cursus orci. Donec tempus tempus risus, et venenatis ante blandit at. In
-                    tristique sollicitudin est, ac tempor massa varius sed. Mauris dignissim est sed nulla bibendum, et
-                    ornare arcu luctus. Pellentesque ullamcorper finibus nibh sit amet efficitur. Integer ligula justo,
-                    tincidunt sed placerat eget, fermentum sed nisl.</p>
+            <div class="info_box">
+              <div class="address">
+                <h2>School address</h2>
+                <h2 class="alignment">: </h2>
+                <h2>Govt primary school Near wonderla</h2>
+              </div>
             </div>
-            <div class="image">
-                <img src="source\v3.jpeg" alt="Image of candidate">
+            <div class="info_box">
+              <div class="info">
+                <h2>Position </h2>
+                <h2 class="alignment">: </h2>
+                <h2>Teacher</h2>
+              </div>
             </div>
+            <div class="info_box">
+              <div class="info">
+                <h2>Gender </h2>
+                <h2 class="alignment">: </h2>
+                <h2>Male</h2>
+              </div>
+            </div>
+            <div class="info_box">
+              <div class="address">
+                <h2>SC/ST/OBC </h2>
+                <h2 class="alignment">: </h2>
+                <h2>Not applicable</h2>
+              </div>
+            </div>
+            <div class="info_box">
+              <div class="info">
+                <h2>Date of Birth</h2>
+                <h2 class="alignment">: </h2>
+                <h2>12/12/1980</h2>
+              </div>
+            </div>
+            <div class="info_box">
+              <div class="address">
+                <h2>Marital status </h2>
+                <h2 class="alignment">: </h2>
+                <h2>Married</h2>
+              </div>
+            </div>
+            <div class="info_box">
+              <div class="address">
+                <h2>If YES,number of children </h2>
+                <h2 class="alignment">: </h2>
+                <h2>2</h2>
+              </div>
+            </div>
+            <div class="info_box">
+              <div class="address">
+                <h2>Children school address</h2>
+                <h2 class="alignment">: </h2>
+                <h2>1)The Sri Kalabyraveshwara Swamy Ayurvedic Medical College Address is 10, Pipeline Road, R.P.C.
+                  Layout, Hosahalli Extension, Vijayanagar, Bengaluru, Karnataka 560104.<br>2)Don Bosco Institute of
+                  Technology</h2>
+              </div>
+            </div>
+            <div class="hobbies_list">
+              <div class="info">
+                <h2>Hobbies</h2>
+                <h2 class="alignment">: </h2>
+                <ol>
+                  <li>Running</li>
+                  <li>Reading</li>
+                </ol>
+              </div>
+            </div>
+            <div class="info_box">
+              <div class="address">
+                <h2>Residential address </h2>
+                <h2 class="alignment">: </h2>
+                <h2>31/4 Venkatamma Farm, Near KB cross, Old Avagere road Bidadi-562109<br>(7892546553)</h2>
+              </div>
+            </div>
+          </div>
+
         </div>
-    </section>
+
+        <!-- Tab no 2 -->
+        <div id="educational" class="content" style="display: none;">
+          <div class="info_box">
+            <div class="address">
+              <h2>If YES,number of children </h2>
+              <h2 class="alignment">: </h2>
+              <h2>2</h2>
+            </div>
+          </div>
+        </div>
+        <!-- Tab no 3 -->
+        <div id="eligibilities" class="content" style="display: none;">
+          <h2>Eligibilities Content</h2>
+          <p>This is the eligibilities section.</p>
+        </div>
+        <!-- Tab no 4 -->
+        <div id="workshops" class="content" style="display: none;">
+          <h2>Workshops Content</h2>
+          <p>This is the workshops section.</p>
+        </div>
+        <!-- Tab no 5 -->
+        <div id="experience" class="content" style="display: none;">
+          <h2>Experience Content</h2>
+          <p>This is the experience section.</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+      </section>
+      <div class="content-box">
+        <img class="teacher_img" src="source\v3.jpeg" alt="Image of candidate">
+      </div>
+    </div>
+  </section>
+
+
 </body>
 <script>
-    let slideIndex = 1;
-showSlides(slideIndex);
+  let slideIndex = 1;
+  showSlides(slideIndex);
 
-function next(n) {
-  showSlides(slideIndex += n);
-}
-
-function present(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+  function next(n) {
+    showSlides(slideIndex += n);
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+
+  function present(n) {
+    showSlides(slideIndex = n);
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+
+  var header = document.getElementById("mydiv");
+  var btns = header.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("active");
+      current[2].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+
+  function showContent(contentId) {
+    const contentSections = document.getElementsByClassName('content');
+
+    for (const section of contentSections) {
+      section.style.display = 'none';
+    }
+
+    const selectedContent = document.getElementById(contentId);
+    if (selectedContent) {
+      selectedContent.style.display = 'block';
+    }
+  }
 </script>
+
 </html>
