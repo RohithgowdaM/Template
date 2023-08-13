@@ -30,6 +30,8 @@ h2 {
   font-weight: 500;
   color: #112A46;
 }
+
+/*****LOGO*******/
 .logo {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -45,11 +47,11 @@ h2 {
   text-align: right;
 }
 
-
+/******Slide Show******/
 .show{
   margin-bottom: 4.8rem;
 }
-  /* Styling the area of the slides */
+
   .slideshow {
     overflow: hidden;
     height: 400px;
@@ -68,8 +70,7 @@ h2 {
     width: 600px;
     height: 400px;
   }
-
-  /* Add a black background color to the top navigation */
+/* Add a black background color to the top navigation */
 .topnav {
   position: relative;
   background-color: #5b54b7;
@@ -116,69 +117,6 @@ h2 {
     height: fit-content;
     width: fit-content;
 }
-
-
-  .description
-  {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    padding: 2%;
-  }
-
-.describe {
-  padding: 4.8rem;
-  font-size: 1.6rem;
-}
-
-.content-box {
- overflow: hidden;
-}
-
-.content-box img {
-  border-radius: 11px;
-  display: block;
-  width: 250px;
-  height: 200;
-  transition: all 0.3s;
-}
-.content-box img:hover {
-  transform: scale(1.1);
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0px;
-  overflow: hidden;
-  background-color: #5b54b7;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
- font-size:20px;
-  text-align: center;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-.active{
-background-color: gray;
-color: white;
-}
-button{
-  margin: auto;
-}
-
-li a:hover {
-  background-color:#ddd;
-  color: black;
-}
-
-
 * {box-sizing: border-box}
 body 
 {font-family: Verdana, sans-serif; margin:0}
@@ -254,9 +192,66 @@ img {vertical-align: middle;}
 img{
   height: 400px;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #5b54b7;
+}
 
+li {
+  float: left;
+}
 
-/********Info section********/
+li a {
+  display: block;
+  color: white;
+  font-size:20px;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.active{
+background-color: gray;
+color: white;
+}
+button{
+  margin: auto;
+}
+
+li a:hover {
+  background-color:#ddd;
+  color: black;
+}
+
+/*****Description Section*******/
+.description
+  {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 2%;
+  }
+
+.describe {
+  padding: 4.8rem;
+  font-size: 1.6rem;
+}
+
+.content-box {
+ overflow: hidden;
+}
+
+.content-box img {
+  border-radius: 11px;
+  display: block;
+  width: 250px;
+  height: 200;
+  transition: all 0.3s;
+}
+.content-box img:hover {
+  transform: scale(1.1);
+}
 
 .describe div {
   margin-bottom: 2rem;
