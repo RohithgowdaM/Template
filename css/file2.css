@@ -12,7 +12,6 @@ body {
     font-family: "Rubik", sans-serif ;
     line-height: 1;
     font-weight: 400;
-    color: #555;
     padding: 0.2%;
     background-color: aliceblue;
 }
@@ -27,8 +26,9 @@ h1{
 }
 
 h2 {
-  font-size: 4.rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #112A46;
 }
 .logo {
   display: grid;
@@ -57,8 +57,6 @@ h2 {
     margin: 0 auto;
   }
    
-  /* Style each of the sides
-  with a fixed width and height */
   .slide {
     float:left;
     height: 400px;
@@ -129,7 +127,7 @@ h2 {
 
 .describe {
   padding: 4.8rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .content-box {
@@ -282,8 +280,92 @@ img{
 }
 
 .hobbies_list li {
-  font-size: 2.8rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #112A46;
   float: none;
+  list-style: none;
+}
+
+
+/*****Tables******/
+
+table {
+  width: 100rem;
+  height: auto;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  border: 0.2rem solid #5b54b7;
+  padding: 1.2rem; 
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+/***Eligibility and Education table****/
+.one_table {
+  width: 10rem;
+}
+
+.two_table {
+  width: 25rem;
+}
+
+.three_table {
+  width: 15rem;
+}
+
+.four_table {
+  width: 20rem;
+}
+/***Training/workshops table****/
+.one_table_seva {
+  width: 10rem;
+}
+
+.two_table_seva {
+  width: 35rem;
+}
+
+.three_table_seva {
+  width: 25rem;
+}
+/***Experience table****/
+.one_table_exp {
+  width: 10rem;
+}
+
+.two_table_exp {
+  width: 35rem;
+}
+
+.three_table_exp {
+  width: 20rem;
+}
+
+.four_table_exp {
+  width: 15rem;
+}
+
+.describe_exp {
+  padding: 4rem;
+}
+
+.describe_exp div {
+  margin: 2.4rem;
+  font-size: 1.6rem;
+}
+
+.describe_exp ol {
   list-style: none;
 }
